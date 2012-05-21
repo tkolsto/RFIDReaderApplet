@@ -1,6 +1,6 @@
 RFIDReaderApplet
 =============
-Java applet that reads the unique id from rfid/nfc/mifare card and tokens and a callback method for accessing it from a web page using javascript. Could easily be adapted to read other sectors of the tags.
+Java applet that reads the unique id from rfid/nfc/mifare tokens via a javascript callback method. Could easily be adapted to read other sectors of the tags.
 
 Example
 -------
