@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<body style="font-size: 1.5em;">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<object id="rfapp" classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93" codebase="http://java.sun.com/products/plugin/1.5/jinstall-15-win32.cab#Version=1,5,0,0"> 
+<param name="CODE" value="rfapp.class">
+<param name="ARCHIVE" value="rfapp_signed.jar"> 
+<param name="type" value="application/x-java-applet;version=1.5"> 
+<param name="scriptable" value="true"> 
+<param name="MAYSCRIPT" value="true">
+<param name="name" value="rfapp">
+<comment></comment> 
+<embed id='rfapp' type="application/x-java-applet;version=1.5" hidden="true" code="rfapp.class" archive="rfapp_signed.jar" scriptable="true" pluginspage="http://java.sun.com/products/plugin/1.5/plugininstall.html" MAYSCRIPT> 
+</object>
+
+
+<div id="uid" style="margin-left: 10%;"><div style="margin-left: -3%;">Insert card...</div> <img src="loading.gif"/></div>
+
+<script type="text/javascript">
+
+	var j = new jQuery.noConflict();
+	
+	function readrfid_callback(uid) {
+		j('#uid').html("<div style='margin-left: -5%;'>UID: "+uid+"</div>");	
+	}
+
+</script>
+
+</body>
+</html>
