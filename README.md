@@ -9,5 +9,6 @@ Beware the jar needs to be signed in order to not choke on a security exception 
 
 Why
 -------
-Based off prototype code for cantivo.org admin panel where it's used by administrators for assigning tokens to users.
+Based off prototype code for [cantivo] admin panel where it's used by administrators for assigning tokens to users.
 
+[Cantivo]: http://cantivo.org
